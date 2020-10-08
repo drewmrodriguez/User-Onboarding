@@ -83,7 +83,6 @@ const formSchema = yup.object().shape({
 
 useEffect(() =>{
     formSchema.isValid(formState).then((valid)=> {
-        // console.log("is this working?", valid);
         setButtonIsDisabled(!valid)
     })
 }, [formState])
